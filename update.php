@@ -59,7 +59,8 @@ $Price=$_POST['Price'];
 $Image =$_POST['Img'];
 
 // Query for Updation
-$sql="update cars set :Model,:color,:Price,:Imag where CarID=:uid";
+
+$sql="update cars set Model=:Model,color=:color,Price=:Price,Image=:Imag where CarID=:uid";
 //Prepare Query for Execution
 $query = $connectDB->prepare($sql);
 // Bind the parameters

@@ -42,9 +42,8 @@ foreach($results as $result)
 {
 ?>
 <!-- Display Records -->
-
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="<?php echo htmlentities($Image);?>" alt="Card image cap">
+  <img style="width: 100px; hight: 100px;" class="card-img-top" src="<?php echo htmlentities($result->Image);?>" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">car #ID :<?php echo htmlentities($result->CarID);?></h5>
   </div>
