@@ -5,8 +5,6 @@
     <title>PHP CURD Operation using PDO Extension  </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
 </head>
 <body>
 <div class="container">
@@ -47,35 +45,13 @@
 // include database connection file
 require_once'dbconfig.php';
 
-// echo $_POST['insert'];
 
 $statusMsg = '';
 
-
-// File upload path
-// $targetDir = "./uploads/";
-// $Image = basename($_FILES["Img"]["name"]);
-// $targetFilePath = $targetDir . $Image;
-// $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
-
-
 if(!empty($_POST['insert']) )
 {
-// File upload path
-// $targetDir = "uploads/";
-// $Image = basename($_FILES["Img"]["name"]);
-// $targetFilePath = $targetDir . $Image;
-// $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 
-//  $allowTypes = array('jpg','png','jpeg','gif','pdf');
-//     if(in_array($fileType, $allowTypes)){
-//         // Upload file to server
-//         if(move_uploaded_file($_FILES["Img"]["tmp_name"], $targetFilePath)){
-
-  // Insert image file name into database
-            // $insert = $db->query("INSERT into images (file_name, uploaded_on) VALUES ('".$fileName."', NOW())");
         
-
 // Posted Values
 $Model=$_POST['Model'];
 $color=$_POST['color'];

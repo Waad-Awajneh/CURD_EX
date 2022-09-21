@@ -11,8 +11,7 @@ require_once'dbconfig.php';
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
     </style>
-    <!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+
 </head>
 <body>
 <div class="container">
@@ -59,8 +58,6 @@ foreach($results as $result)
 <a href="update.php?id=<?php echo htmlentities($result->CarID);?>"><button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></button></a>
 <a href="index.php?del=<?php echo htmlentities($result->CarID);?>"><button class="btn btn-danger btn-xs" onClick="return confirm('Do you really want to delete');"><span class="glyphicon glyphicon-trash"></span></button></a>
   
-    <!-- <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a> -->
   </div>
 </div>
 

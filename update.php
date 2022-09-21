@@ -50,36 +50,6 @@ require_once'dbconfig.php';
 if(isset($_POST['update']))
 {
 
-
-
-
-
-
-    // $targetDir = "uploads/";
-    // $Image = basename($_FILES["Img"]["name"]);
-    // $targetFilePath = $targetDir . $Image;
-    // $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
-    
-    //  $allowTypes = array('jpg','png','jpeg','gif','pdf');
-    //     if(in_array($fileType, $allowTypes)){
-    //         // Upload file to server
-    //         if(move_uploaded_file($_FILES["Img"]["tmp_name"], $targetFilePath)){
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Get the carid
 $carid=intval($_GET['id']);
 // Posted Values
@@ -89,8 +59,6 @@ $Price=$_POST['Price'];
 $Image =$_POST['Img'];
 
 // Query for Updation
-// $connectDB->query("UPDATE `php` SET `firstname` = 'updatge', `lastname` = 'updated', `email` = 'test@gmail.com' WHERE `id` = 1");
-
 $sql="update cars set :Model,:color,:Price,:Imag where CarID=:uid";
 //Prepare Query for Execution
 $query = $connectDB->prepare($sql);
@@ -114,5 +82,5 @@ echo "<script>window.location.href='index.php'</script>";
 
 
 
-        // }}
+
 ?>
